@@ -1,0 +1,36 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./positioning.css");
+@import url("./mediaqueries.css");
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+
+/* Main stylesheet for general styling*/
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: "lato", sans-serif;
+}
+
+h1, h2, nav {
+    font-family: "M PLUS 1", sans-serif;
+}
+
+h1, h2 {
+
+    font-size: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+nav {
+    font-size: 1.5rem;
+}
+
+
+.img-header {
+    width: 100%;
+    height: auto;
+}

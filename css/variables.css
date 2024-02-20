@@ -1,0 +1,12 @@
+/* Stylesheet for variables */
+
+:root {
+    --white: #ffffff;
+    --light-grey: #efefef;
+    --turquoise: #237497;
+    --dark-turquoise: #165169;
+    --magenta: #7A0B6F;
+    --dark-magenta: #4D0746;
+    --black: #000000;
+}
+
