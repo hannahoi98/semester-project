@@ -1,0 +1,29 @@
+
+
+
+/* Positioning for indexpage */
+
+.container-explore-intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.index-events {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container-explore-teachers-researchers,
+.container-explore-children {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-all {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
