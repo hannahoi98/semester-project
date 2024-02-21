@@ -89,7 +89,10 @@ footer {
 .textbox-intro,
 .textbox-explore-children,
 .textbox-explore-teachers-researchers,
-.textbox-explore-event {
+.textbox-explore-event,
+.textbox-event,
+.textbox-exhibition,
+.textbox-visitor-info {
     background-color: var(--light-grey);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     padding-left: 10px;
@@ -110,9 +113,16 @@ footer {
     max-width: 905px;
 }
 
-.textbox-explore-event {
+.textbox-explore-event,
+.textbox-event,
+.textbox-visitor-info {
     width: 380px;
     height: 240px;
+}
+
+.textbox-exhibition {
+    width: 380px;
+    height: 320px;
 }
 
 
