@@ -16,15 +16,15 @@
         <header>
             <div class="header-top">
                 <div class="header-logo">
-                    <img src="" alt="">
+                    <img src="./assets/Logo-osm.jpg" alt="" class="logo">
                 </div>
 
                 <div class="header-nav">
                     <nav>
-                        <a href="#">Exhibitions</a>
-                        <a href="#">Get Involved</a>
-                        <a href="#">Contact</a>
-                        <a href="#" class="CTA">Visit</a>
+                        <a href="#" class="a-header">Exhibitions</a>
+                        <a href="#" class="a-header">Get Involved</a>
+                        <a href="#" class="a-header">Contact</a>
+                        <a href="#" class="CTA-header">Visit</a>
                     </nav>
                 </div>
             </div>
@@ -116,8 +116,10 @@
                     </div>
 
                     <div class="textbox-CTA">
-                        <p></p>
-                        <a href="#">EXHIBITIONS</a> 
+                        <p class="bigger">Sounds fun? theres more!</p>
+                        <div class="CTA-magenta">
+                            <a href="#">EXHIBITIONS</a> 
+                        </div>
                     </div>
                 </section>
 
@@ -127,26 +129,38 @@
         <footer>
             <div class="footer-nav-newsletter">
                 <div class="footer-nav">
-                    <nav>
-                        <a href="#">Exhibitions and Events</a>
-                        <a href="#">Visitor Information</a>
-                        <a href="#">Terms and Conditions</a>
-                        <a href="#">Get Involved</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Privacy Policy</a>
-                    </nav>
+                    <div class="nav-left">
+                        <a href="#" class="a-footer">Exhibitions and Events</a>
+                        <a href="#" class="a-footer">Visitor Information</a>
+                        <a href="#" class="a-footer">Terms and Conditions</a>
+                    </div>
+                    <div class="nav-right">
+                        <a href="#" class="a-footer">Get Involved</a>
+                        <a href="#" class="a-footer">Contact Us</a>
+                        <a href="#" class="a-footer">Privacy Policy</a>
+                    </div>
                 </div>
 
                 <div class="footer-newlsetter">
-                    <p></p>
-                    <!--Legg til newsletter-form-->
+                    <form>
+                        <p class="white">Loving the Museum? Sign up for the newsletter!</p>
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" class="form-newsletter">
+                        <button class="button-newsletter">Sign Up</button>
+                    </form>  
                 </div>
             </div>
 
             <div class="footer-socialmedia">
-                <!--Legg til sosiale medier linker-->
-                <p>Icons by <a href>Icons8</a></p>
+                <img src="./assets/icons8-facebook-50.png" alt="" class="socialmedia">
+                <img src="./assets/icons8-twitter-50.png" alt="" class="socialmedia">
+                <img src="./assets/icons8-instagram-50.png" alt="" class="socialmedia">
+                <img src="./assets/icons8-tiktok-50.png" alt="" class="socialmedia">      
             </div>
+            <div class="link-icons">
+                <a href="#" class="small">Icons by Icons8</a>
+            </div>
+            
         </footer>
         
     </body>
