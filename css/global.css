@@ -1,16 +1,26 @@
 @import url("./reset.css");
 @import url("./variables.css");
 @import url("./positioning.css");
-@import url("./mediaqueries.css");
+@import url("./index.css");
+@import url("./exhibitions.css");
+@import url("./visit.css");
+@import url("./getinvolved.css");
+
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
 
-/* Main stylesheet for general styling*/
+/* Global stylesheet for repetetive styling */
+/* Stylesheet also includes styling for header and footer */
 body {
     background-color: var(--white);
     color: var(--black);
     font-family: "lato", sans-serif;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 /* Text-styling */
@@ -65,13 +75,6 @@ footer {
 }
 
 
-
-.wrapper {
-    max-width: 1240px;
-    margin: 0 auto;
-}
-
-
 .subheadline-turquoise,
 .subheadline-magenta {
     padding-top: 10px;
@@ -115,57 +118,14 @@ footer {
     padding-top: 20px;
 }
 
-.textbox-explore-teachers-researchers {
-    max-width: 275px;
-    height: 300px;
-}
-
-.textbox-explore-children {
-    max-width: 590px;
-    height: 300px;
-}
-
-.textbox-intro {
-    max-width: 905px;
-}
-
 
 .textbox-event,
-.textbox-visitor-info {
-    width: 380px;
-    height: 240px;
-}
-
-.textbox-explore-event {
-    width: 380px;
-    height: 180px;
-}
-
-.textbox-at-museum {
-    width: 380px;
-    height: 160px;
-}
-
-.textbox-exhibition {
-    width: 380px;
-    height: 320px;
-}
-
 
 
 /* Image-styling */
 .img-header {
     width: 100%;
     height: auto;
-}
-
-.img-children {
-    max-width: 610px;
-}
-
-.img-teachers,
-.img-researchers {
-    max-width: 295px;
 }
 
 
@@ -221,10 +181,7 @@ footer {
 }
 
 
-
-
 /* Footer */
-
 footer {
     margin-top: 80px;
 }

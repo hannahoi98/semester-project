@@ -1,0 +1,27 @@
+/* Stylesheet for indexpage */
+/* Includes unique styling, flexbox/grid and media queries */
+
+/* Styling */
+/* Sizing textboxes */
+.textbox-at-museum {
+    width: 380px;
+    height: 160px;
+}
+
+.textbox-visitor-info {
+    width: 380px;
+    height: 240px;
+}
+
+/* Flexbox/Grid */
+.visitor-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.visit-at-museum {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

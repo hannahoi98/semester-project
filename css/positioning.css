@@ -1,45 +1,4 @@
 /* Positioning for indexpage */
 
-.container-explore-intro {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-
-.index-events,
-.exhibitions-events {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.container-explore-teachers-researchers,
-.container-explore-children {
-    display: flex;
-    flex-direction: column;
-}
-
-.explore-all {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.exhibition-spaces {
-    display: flex;
-    justify-content: ;
-}
-
-.visitor-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.visit-at-museum {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 

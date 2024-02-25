@@ -1,0 +1,60 @@
+/* Stylesheet for indexpage */
+/* Includes unique styling, flexbox/grid and media queries */
+
+/* Styling */
+/* Sizing textboxes */
+.textbox-explore-teachers-researchers {
+    max-width: 275px;
+    height: 300px;
+}
+
+.textbox-explore-children {
+    max-width: 590px;
+    height: 300px;
+}
+
+.textbox-intro {
+    max-width: 905px;
+}
+
+
+/* Sizing images */
+.img-children {
+    max-width: 610px;
+}
+
+.img-teachers,
+.img-researchers {
+    max-width: 295px;
+}
+
+
+/* Flexbox/Grid */
+.explore-all {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.container-explore-intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container-explore-teachers-researchers,
+.container-explore-children {
+    display: flex;
+    flex-direction: column;
+}
+
+.index-events {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* Media queries */
+

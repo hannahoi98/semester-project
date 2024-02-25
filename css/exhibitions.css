@@ -1,0 +1,27 @@
+/* Stylesheet for indexpage */
+/* Includes unique styling, flexbox/grid and media queries */
+
+/* Styling */
+.textbox-explore-event {
+    width: 380px;
+    height: 180px;
+}
+
+.textbox-exhibition {
+    width: 380px;
+    height: 320px;
+}
+
+
+
+
+/* Flexbox/Grid */
+.exhibitions-events {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* Media Queries */
