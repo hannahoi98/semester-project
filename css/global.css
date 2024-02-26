@@ -5,6 +5,7 @@
 @import url("./exhibitions.css");
 @import url("./visit.css");
 @import url("./getinvolved.css");
+@import url("./contact.css");
 
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
@@ -41,8 +42,16 @@ h1, h2 {
     padding-right: 10px;
 }
 
-h1, h2, nav {
+h1, 
+h2, 
+nav,
+.subheadline-magenta,
+.subheadline-turquoise {
     font-family: "M PLUS 1", sans-serif;
+}
+
+.subheadline-bigger {
+    font-size: 1.6rem;
 }
 
 p {
@@ -57,6 +66,7 @@ p {
 
 .headline {
     background-color: var(--black);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     color: var(--white);
     height: 100px;
 }
@@ -64,6 +74,10 @@ p {
 .white {
     color: var(--white);
     font-size: 1.25rem;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 a {
@@ -100,7 +114,10 @@ footer {
 .textbox-event,
 .textbox-exhibition,
 .textbox-visitor-info,
-.textbox-at-museum {
+.textbox-at-museum,
+.textbox-get-involved,
+.container-contact,
+.container-contact-form {
     background-color: var(--light-grey);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     padding-left: 10px;
@@ -119,13 +136,15 @@ footer {
 }
 
 
-.textbox-event,
-
 
 /* Image-styling */
 .img-header {
     width: 100%;
     height: auto;
+}
+
+.img-get-involved {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -146,13 +165,13 @@ footer {
 
 .CTA-magenta {
     background-color: var(--magenta);
-    border: var(--dark-magenta);
+    border: 0.5px solid var(--dark-magenta);
     
 }
 
 .CTA-turquoise {
     background-color: var(--turquoise);
-    border: var(--dark-turquoise);
+    border: 0.5px solid var(--dark-turquoise);
 }
 
 /* Header */
@@ -178,6 +197,13 @@ footer {
 .a-header,
 .CTA-header {
     margin-left: 40px;
+}
+
+.CTA-header {
+    background-color: var(--magenta);
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    border: 0.5px solid var(--dark-magenta);
 }
 
 
@@ -235,16 +261,17 @@ footer {
 
 .button-newsletter {
     width: 120px;
-    height: 30px;
+    height: 34px;
     color: var(--white);
     background-color: var(--turquoise);
-    border-radius: var(--dark-turquoise);
+    border: 2px var(--dark-turquoise);
 }
 
 .form-newsletter {
     width: 300px;
-    height: 30px;
-    border-radius: var(--dark-turquoise);
+    height: 34px;
+    border: 2px var(--dark-turquoise);
+    color: var(--dark-turquoise);
 }
 
 .button-newsletter,

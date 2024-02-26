@@ -10,7 +10,15 @@
 
 .textbox-visitor-info {
     width: 380px;
-    height: 240px;
+    height: 250px;
+}
+
+.hours {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    border-bottom: 1px solid var(--turquoise);
+    width: 240px;
+    word-spacing: 15px;
 }
 
 /* Flexbox/Grid */

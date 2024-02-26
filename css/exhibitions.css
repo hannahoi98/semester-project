@@ -2,24 +2,50 @@
 /* Includes unique styling, flexbox/grid and media queries */
 
 /* Styling */
-.textbox-explore-event {
+.textbox-event {
     width: 380px;
-    height: 180px;
+    height: 220px;
 }
 
 .textbox-exhibition {
     width: 380px;
-    height: 320px;
+    height: 340px;
+}
+
+
+.img-event,
+.img-exhibition {
+    width: 400px;
+    height: auto;
 }
 
 
 
 
 /* Flexbox/Grid */
+.container-event,
+.conatiner-exhibition {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-exhibition {
+    display: flex;
+    flex-direction: column;
+}
+
 .exhibitions-events {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.exhibitions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    row-gap: 20px;
 }
 
 
