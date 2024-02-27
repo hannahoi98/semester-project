@@ -1,0 +1,6 @@
+.container-terms,
+.container-privacy {
+    height: 500px;
+    overflow: scroll;
+    margin-top: 20px;
+}
