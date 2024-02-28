@@ -7,6 +7,7 @@
 @import url("./getinvolved.css");
 @import url("./contact.css");
 @import url("./document.css");
+@import url("./mediaqueries.css");
 
 
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
@@ -100,7 +101,7 @@ footer {
 .subheadline-magenta {
     padding-top: 10px;
     padding-bottom: 5px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .subheadline-turquoise {
@@ -142,6 +143,7 @@ footer {
     margin: auto;
     margin-top: 20px;
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 
@@ -225,6 +227,7 @@ footer {
 /* Footer */
 footer {
     margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 .footer-nav-newsletter {

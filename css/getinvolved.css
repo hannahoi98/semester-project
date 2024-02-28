@@ -1,10 +1,11 @@
 
 .textbox-get-involved {
-    width: 580px;
+    width: 620px;
     height: 300px;
 }
 
-.container-get-involved {
+.container-get-involved,
+.container-get-involved-reverse {
     display: flex;
     justify-content: center;
     margin-top: 20px;
