@@ -21,7 +21,6 @@
     font-family: "M PLUS 1", sans-serif;
     background-color: var(--magenta);
     font-size: 1.8rem;
-    word-spacing: 20px;
     color: var(--white);
     width: 300px;
     padding-top: 10px;
@@ -265,10 +264,6 @@ footer {
     margin-right: 50px;
 }
 
-.a-header,
-.CTA-header {
-    margin-left: 40px;
-}
 
 .CTA-header {
     background-color: var(--magenta);
@@ -367,9 +362,32 @@ footer {
         height: auto;
     }
 
+    .img-children {
+        max-width: 490px;
+    }
+
+    .img-teachers,
+    .img-researchers {
+        max-width: 237px;
+    }
+
+    .textbox-explore-children {
+        width: 470px;
+        height: 390px;
+    }
+
+    .textbox-explore-teachers-researchers {
+        width: 217px;
+        height: 390px;
+    }
+
     .textbox-event {
         width: 300px;
         height: 260px;
+    }
+
+    .textbox-explore-event {
+        width: 300px;
     }
 
     .textbox-exhibition {
@@ -391,8 +409,36 @@ footer {
 }
 
 @media (min-width:710px) and (max-width:1009px) {
+    
     .wrapper {
         width: 700px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .header-top {
+        height: 140px;
+    }
+
+    .button-dropdown {
+        width: 200px;
+        font-size: 1.6rem;
+    }
+
+    .a-header {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .header-nav {
+        margin-right: 40px;
+    }
+
+
+    .img-explore-intro {
+        resize: none;
     }
 
     .img-event,
@@ -405,6 +451,20 @@ footer {
         width: 330px;
     }
 
+    .img-children {
+        width: 700px;
+    }
+
+    .img-teachers,
+    .img-researchers {
+        width: 340px;
+    }
+
+    .textbox-intro {
+        width: 400px;
+        height: 300px;
+        overflow: scroll;
+    }
 
     .textbox-event {
         width: 200px;
@@ -416,8 +476,30 @@ footer {
         height: 400px;
     }
 
+    .textbox-explore-children {
+        max-width: 700px;
+        height: 260px;
+    }
+
+    .textbox-explore-teachers-researchers {
+        max-width: 320px;
+        height: 300px;
+    }
+
+    .textbox-explore-event {
+        width: 200px;
+        height: 260px;
+    }
+
+   
     .textbox-CTA {
         max-width: 420px;
+    }
+
+    .explore-all {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
     }
 
     .footer-nav-newsletter {
@@ -475,13 +557,44 @@ footer {
 @media (min-width:300px) and (max-width:709px) {
     .wrapper {
         width: 300px;
+    }
 
+    .logo {
+        width: 100px;
+    }
+
+    .header-top {
+        height: 100px;
+    }
+
+    .button-dropdown {
+        width: 130px;
+        font-size: 1.2rem;
+    }
+
+    .dropdown-content {
+        width: 130px;
+    }
+
+    .a-header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .header-nav {
+        margin-right: 30px;
     }
 
     .img-event,
     .img-exhibition,
     .img-get-involved,
-    .img-museum {
+    .img-museum,
+    .img-explore-intro {
         width: 300px;
 
     }
@@ -490,10 +603,36 @@ footer {
     .textbox-exhibition,
     .textbox-get-involved,
     .textbox-at-museum,
-    .textbox-visitor-info {
+    .textbox-visitor-info,
+    .textbox-explore-event {
         width: 280px;
         height: fit-content;
         padding-bottom: 10px;
+    }
+
+    .explore-all {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .textbox-intro,
+    .textbox-explore-children,
+    .textbox-explore-teachers-researchers {
+        width: 280px;
+        height: 160px;
+        overflow: scroll;
+    }
+
+    .container-explore-intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .index-events {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
     }
 
     .exhibitions-events {
