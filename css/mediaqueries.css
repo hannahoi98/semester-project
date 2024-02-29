@@ -116,3 +116,36 @@
 
    
 }
+
+@media (min-width:300px) and (max-width:709px) {
+    .wrapper {
+        width: 300px;
+
+    }
+
+    .img-event,
+    .img-exhibition {
+        width: 300px;
+
+    }
+
+    .textbox-event,
+    .textbox-exhibition {
+        width: 280px;
+        height: fit-content;
+    }
+
+    .exhibitions-events {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .textbox-CTA {
+        max-width: 300px;
+    }
+
+
+
+
+}

@@ -297,3 +297,52 @@ footer {
     margin-top: 10px;
 }
 
+
+
+@media (min-width:300px) and (max-width:709px) {
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .footer-nav-newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-newsletter {
+        width: 180px;
+        height: 30px;
+    }
+
+    .button-newsletter {
+        width: 100px;
+        height: 30px;
+    }
+
+    .newsletter {
+        display: flex;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .white {
+        text-align: center;
+        width: 230px;
+        margin-top: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .headline {
+        height: 80px;
+    }
+}
+
