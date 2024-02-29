@@ -10,11 +10,65 @@
 @import url("./mediaqueries.css");
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
 
 /* Global stylesheet for repetetive styling */
 /* Stylesheet also includes styling for header and footer */
+
+.button-dropdown {
+    font-family: "M PLUS 1", sans-serif;
+    background-color: var(--magenta);
+    font-size: 1.8rem;
+    word-spacing: 20px;
+    color: var(--white);
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--dark-magenta);
+    cursor: pointer;
+}
+
+.button-dropdown:hover {
+    background-color: var(--black);
+    border: 5px solid var(--magenta);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 300px;
+    text-align: left;
+    z-index: 1;
+}
+
+.a-header {
+    color: var(--white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.a-header:hover {
+    text-decoration: underline 4px var(--magenta);
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 body {
     background-color: var(--white);
     color: var(--black);
@@ -297,9 +351,179 @@ footer {
     margin-top: 10px;
 }
 
+@media (min-width:1010px) and (max-width:1250px) {
+    
+    /* General styling */
+    .wrapper {
+        width: 1000px;
+    }
+
+
+    /* Exhibitions Page */
+    .img-event,
+    .img-exhibition,
+    .img-museum {
+        width: 320px;
+        height: auto;
+    }
+
+    .textbox-event {
+        width: 300px;
+        height: 260px;
+    }
+
+    .textbox-exhibition {
+        width: 300px;
+        height: 390px;
+    }
+
+    /* Contact Page */
+    .textbox-visitor-info {
+        width: 300px;
+        height: 260px;
+
+    }
+
+    .textbox-at-museum {
+        width: 300px;
+    }
+
+}
+
+@media (min-width:710px) and (max-width:1009px) {
+    .wrapper {
+        width: 700px;
+    }
+
+    .img-event,
+    .img-museum {
+        width: 220px;
+        height: auto;
+    }
+
+    .img-exhibition {
+        width: 330px;
+    }
+
+
+    .textbox-event {
+        width: 200px;
+        height: 350px;
+    }
+
+    .textbox-exhibition {
+        width: 310px;
+        height: 400px;
+    }
+
+    .textbox-CTA {
+        max-width: 420px;
+    }
+
+    .footer-nav-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        margin: auto;
+    }
+
+    .container-contact,
+    .container-contact-form {
+        max-width: 680px;
+    }
+
+    .contact-form {
+        margin-right: 100px;
+    }
+
+    .container-get-involved {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-get-involved-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textbox-get-involved {
+        width: 680px;
+        height: 230px;
+    }
+
+    .textbox-visitor-info {
+        width: 200px;
+        height: 330px;
+
+    }
+
+    .textbox-at-museum {
+        width: 200px;
+        height: 250px;
+    }
+
+    .hours {
+        width: 200px;
+    }
+
+   
+}
+
 
 
 @media (min-width:300px) and (max-width:709px) {
+    .wrapper {
+        width: 300px;
+
+    }
+
+    .img-event,
+    .img-exhibition,
+    .img-get-involved,
+    .img-museum {
+        width: 300px;
+
+    }
+
+    .textbox-event,
+    .textbox-exhibition,
+    .textbox-get-involved,
+    .textbox-at-museum,
+    .textbox-visitor-info {
+        width: 280px;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+
+    .exhibitions-events {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .textbox-CTA {
+        max-width: 300px;
+    }
+
+    .container-get-involved {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-get-involved-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+
+    .visit-at-museum,
+    .visitor-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
     .footer-nav {
         display: flex;
         flex-direction: column;
@@ -310,21 +534,20 @@ footer {
     .footer-nav-newsletter {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        
     }
 
     .form-newsletter {
-        width: 180px;
+        width: 160px;
         height: 30px;
     }
 
     .button-newsletter {
-        width: 100px;
+        width: 90px;
         height: 30px;
     }
 
-    .newsletter {
-        display: flex;
-    }
 
     p {
         font-size: 0.9rem;
@@ -344,5 +567,45 @@ footer {
     .headline {
         height: 80px;
     }
-}
 
+    .CTA-magenta,
+    .CTA-turquoise {
+        width: 200px;
+        height: 18px;
+        padding-top: 10px;
+        padding-bottom: 18px;
+    }
+
+    .container-contact,
+    .container-contact-form {
+        max-width: 280px;
+        height: fit-content;
+    }
+
+    
+    .contact-form {
+        margin-right: 0px;
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: auto;
+        margin: 0;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 15px;
+    }
+
+    .button-contact-form {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+   
+        
+
+}
