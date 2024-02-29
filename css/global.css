@@ -46,7 +46,7 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
     width: 300px;
-    text-align: left;
+    text-align: center;
     z-index: 1;
 }
 
@@ -237,6 +237,17 @@ footer {
     background-color: var(--turquoise);
     border: 0.5px solid var(--dark-turquoise);
 }
+
+.CTA-magenta:hover,
+.CTA-magenta:active {
+    background-color: var(--dark-magenta);
+}
+
+.CTA-turquoise:hover,
+.CTA-turquoise:active {
+    background-color: var(--dark-turquoise);
+}
+
 
 .a-inline {
     font-size: 1rem;
