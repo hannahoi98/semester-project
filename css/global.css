@@ -587,7 +587,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .dropdown-content {
+    .dropdown-links {
         width: 130px;
     }
 
@@ -759,7 +759,12 @@ footer {
         width: 200px;
     }
 
-   
-        
+    .footer-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
 
+   
+    
 }
