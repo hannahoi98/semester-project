@@ -1,9 +1,13 @@
+/* Stylesheet for Get Involved Page */
+/* Includes unique styling and flexbox/positioning */
 
+/* Textbox Styling */
 .textbox-get-involved {
     width: 620px;
     height: 300px;
 }
 
+/* Flexbox/Positioning */
 .container-get-involved,
 .container-get-involved-reverse {
     display: flex;

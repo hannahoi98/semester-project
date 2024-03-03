@@ -1,5 +1,5 @@
-/* Stylesheet for indexpage */
-/* Includes unique styling, flexbox/grid and media queries */
+/* Stylesheet for Index Page */
+/* Includes unique styling and flexbox/positioning */
 
 /* Styling */
 /* Sizing textboxes */
@@ -24,11 +24,6 @@
 }
 
 
-.img-explore-intro {
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-
 /* Sizing images */
 .img-children {
     width: 610px;
@@ -40,7 +35,7 @@
 }
 
 
-/* Flexbox/Grid */
+/* Flexbox/Positioning */
 .explore-all {
     display: flex;
     justify-content: space-between;
@@ -64,8 +59,3 @@
     justify-content: space-between;
     margin-top: 20px;
 }
-
-
-
-/* Media queries */
-

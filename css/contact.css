@@ -1,10 +1,12 @@
+/* Stylesheet for Get Involved Page */
+/* Includes unique styling and flexbox/positioning */
 
+/* Styling */
 .container-contact,
 .container-contact-form {
     margin: 0 auto;
     margin-top: 20px;
 }
-
 
 .container-contact {
     width: 800px;
@@ -16,18 +18,9 @@
     height: 500px;
 }
 
-.contact-info {
-    display: flex;
-    margin-top: 20px;
-    gap: 40px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    row-gap: 10px;
-    margin-right: 200px;
+.contact-icon {
+    width: 30px;
+    margin-right: -34px;
 }
 
 .form-element {
@@ -55,8 +48,23 @@ textarea {
     align-self: center;
 }
 
-.contact-icon {
-    width: 30px;
-    margin-right: -34px;
+
+/* Flexbox/Positioning */
+.contact-info {
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 10px;
+    margin-right: 200px;
+}
+
+
+
+
 

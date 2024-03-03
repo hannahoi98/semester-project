@@ -1,22 +1,51 @@
+/* Imported stylesheets */
+/* Stylesheets for variables and reset*/
 @import url("./reset.css");
 @import url("./variables.css");
-@import url("./positioning.css");
+
+/* Page-specific stylesheet */
 @import url("./index.css");
 @import url("./exhibitions.css");
 @import url("./visit.css");
 @import url("./getinvolved.css");
 @import url("./contact.css");
 @import url("./document.css");
-@import url("./mediaqueries.css");
 
 
-
+/* Imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
 
-/* Global stylesheet for repetetive styling */
+/* Global stylesheet for repetetive styling and mediaqueries */
 /* Stylesheet also includes styling for header and footer */
 
+
+/* Header - general styling */
+.header-top {
+    height: 160px;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 50px;
+}
+
+.header-nav {
+    margin-right: 50px;
+}
+
+.img-header {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Header - Dropdown-menu */
 .button-dropdown {
     font-family: "M PLUS 1", sans-serif;
     background-color: var(--magenta);
@@ -35,7 +64,6 @@
     border: 4px solid var(--magenta);
 }
 
-
 .dropdown-nav {
     position: relative;
     display: inline-block;
@@ -48,6 +76,10 @@
     width: 300px;
     text-align: center;
     z-index: 1;
+}
+
+.dropdown-nav:hover .dropdown-links {
+    display: block;
 }
 
 .a-header {
@@ -63,11 +95,7 @@
 }
 
 
-.dropdown-nav:hover .dropdown-links {
-    display: block;
-}
-
-
+/* General styling for webpage */
 body {
     background-color: var(--white);
     color: var(--black);
@@ -79,11 +107,17 @@ main {
     margin: 0 auto;
 }
 
-ul {
-    list-style: none;
+
+/* Text-styling and positioning */
+/* For headlines, subheadlines and navigation */
+h1, 
+h2, 
+nav,
+.subheadline-magenta,
+.subheadline-turquoise {
+    font-family: "M PLUS 1", sans-serif;
 }
 
-/* Text-styling */
 h1 {
     margin-top: 30px;
 }
@@ -101,26 +135,8 @@ h1, h2 {
     padding-right: 10px;
 }
 
-h1, 
-h2, 
-nav,
-.subheadline-magenta,
-.subheadline-turquoise {
-    font-family: "M PLUS 1", sans-serif;
-}
-
-.subheadline-bigger {
-    font-size: 1.6rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    padding-top: 5px;
-}
-
-.bigger {
-    font-size: 1.25rem;
+a {
+    font-size: 1.5rem;
 }
 
 .headline {
@@ -129,30 +145,6 @@ p {
     color: var(--white);
     height: 100px;
 }
-
-.white {
-    color: var(--white);
-    font-size: 1.25rem;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.bold-big {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 15px;
-}
-
-a {
-    font-size: 1.5rem;
-}
-
-footer {
-    background-color: var(--black);
-}
-
 
 .subheadline-turquoise,
 .subheadline-magenta {
@@ -169,9 +161,44 @@ footer {
     border-bottom: solid 2px var(--magenta);
 }
 
+.subheadline-bigger {
+    font-size: 1.6rem;
+}
+
+/* General text-styling */
+p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-top: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold-big {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.bigger {
+    font-size: 1.25rem;
+}
 
 
-/* Textbox-styling */
+.white {
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.small {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+
+/* Styling for textboxes and containers */
 .textbox-intro,
 .textbox-explore-children,
 .textbox-explore-teachers-researchers,
@@ -204,13 +231,8 @@ footer {
 }
 
 
-
-/* Image-styling */
-.img-header {
-    width: 100%;
-    height: auto;
-}
-
+/* Styling for images */
+.img-explore-intro,
 .img-get-involved {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -230,11 +252,13 @@ footer {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-
 .CTA-magenta {
     background-color: var(--magenta);
     border: 0.5px solid var(--dark-magenta);
-    
+}
+
+.CTA-magenta:hover {
+    background-color: var(--dark-magenta);
 }
 
 .CTA-turquoise {
@@ -242,16 +266,9 @@ footer {
     border: 0.5px solid var(--dark-turquoise);
 }
 
-.CTA-magenta:hover,
-.CTA-magenta:active {
-    background-color: var(--dark-magenta);
-}
-
-.CTA-turquoise:hover,
-.CTA-turquoise:active {
+.CTA-turquoise:hover {
     background-color: var(--dark-turquoise);
 }
-
 
 .a-inline {
     font-size: 1rem;
@@ -259,39 +276,13 @@ footer {
     text-decoration: underline;
 }
 
-/* Header */
-.logo {
-    width: 200px;
-    margin-left: 50px;
-}
-
-
-.header-top {
-    height: 160px;
-    width: 100%;
-    background-color: var(--black);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-nav {
-    margin-right: 50px;
-}
-
-
-.CTA-header {
-    background-color: var(--magenta);
-    padding: 5px 30px 5px 30px;
-    border-radius: 5px;
-    border: 0.5px solid var(--dark-magenta);
-}
-
 
 /* Footer */
+/* Footer - General Styling */
 footer {
     margin-top: 80px;
     padding-bottom: 20px;
+    background-color: var(--black);
 }
 
 .footer-nav-newsletter {
@@ -314,35 +305,12 @@ footer {
     gap: 50px;
 }
 
-.socialmedia {
-    width: 40px;
-}
-
-.small {
-    font-size: 1rem;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.link-icons {
-    text-align: center;
-}
-
-.footer-socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    border-top: solid 2px var(--white);
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
 .a-footer {
     font-size: 1.25rem;
     margin-bottom: 16px;
 }
 
+/* Footer - Newsletter */
 .button-newsletter {
     width: 120px;
     height: 34px;
@@ -363,6 +331,26 @@ footer {
     margin-top: 10px;
 }
 
+/* Footer - Social Media */
+.footer-socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: solid 2px var(--white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.socialmedia {
+    width: 40px;
+}
+
+.link-icons {
+    text-align: center;
+}
+
+
+/* Media Queries*/
 @media (min-width:1010px) and (max-width:1250px) {
     
     /* General styling */
@@ -370,8 +358,7 @@ footer {
         width: 1000px;
     }
 
-
-    /* Exhibitions Page */
+    /* Shared media queries */
     .img-event,
     .img-exhibition,
     .img-museum {
@@ -379,6 +366,7 @@ footer {
         height: auto;
     }
 
+    /* Index Page */ 
     .img-children {
         max-width: 490px;
     }
@@ -398,13 +386,14 @@ footer {
         height: 390px;
     }
 
+    .textbox-explore-event {
+        width: 300px;
+    }
+
+    /* Exhibitions Page */
     .textbox-event {
         width: 300px;
         height: 260px;
-    }
-
-    .textbox-explore-event {
-        width: 300px;
     }
 
     .textbox-exhibition {
@@ -412,31 +401,36 @@ footer {
         height: 390px;
     }
 
-    /* Contact Page */
+    /* Visitor Page */
     .textbox-visitor-info {
         width: 300px;
         height: 260px;
-
     }
 
     .textbox-at-museum {
         width: 300px;
     }
-
 }
+
 
 @media (min-width:710px) and (max-width:1009px) {
     
+    /* General Syling */
     main {
         width: 700px;
     }
 
+    /* Header */
     .logo {
         width: 160px;
     }
 
     .header-top {
         height: 140px;
+    }
+
+    .header-nav {
+        margin-right: 40px;
     }
 
     .button-dropdown {
@@ -449,27 +443,26 @@ footer {
         padding-bottom: 14px;
     }
 
-    .header-nav {
-        margin-right: 40px;
-    }
-
-
-    .img-explore-intro {
-        resize: none;
-    }
-
+    /* Shared media queries */
     .img-event,
     .img-museum {
         width: 220px;
         height: auto;
     }
 
-    .img-exhibition {
-        width: 330px;
+    .textbox-CTA {
+        max-width: 420px;
     }
 
-    .img-children {
-        width: 700px;
+    /* Index Page */
+    .explore-all {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .img-explore-intro {
+        resize: none;
     }
 
     .img-teachers,
@@ -477,20 +470,14 @@ footer {
         width: 340px;
     }
 
+    .img-children {
+        width: 700px;
+    }
+
     .textbox-intro {
         width: 400px;
         height: 300px;
         overflow: scroll;
-    }
-
-    .textbox-event {
-        width: 200px;
-        height: 350px;
-    }
-
-    .textbox-exhibition {
-        width: 310px;
-        height: 400px;
     }
 
     .textbox-explore-children {
@@ -508,34 +495,22 @@ footer {
         height: 260px;
     }
 
-   
-    .textbox-CTA {
-        max-width: 420px;
+    /* Exhibition Page */
+    .img-exhibition {
+        width: 330px;
     }
 
-    .explore-all {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 20px;
+    .textbox-event {
+        width: 200px;
+        height: 350px;
     }
 
-    .footer-nav-newsletter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 40px;
-        margin: auto;
+    .textbox-exhibition {
+        width: 310px;
+        height: 400px;
     }
 
-    .container-contact,
-    .container-contact-form {
-        max-width: 680px;
-    }
-
-    .contact-form {
-        margin-right: 100px;
-    }
-
+    /* Get Involved Page */
     .container-get-involved {
         display: flex;
         flex-direction: column;
@@ -550,7 +525,8 @@ footer {
         width: 680px;
         height: 230px;
     }
-
+   
+    /* Visitor Page */
     .textbox-visitor-info {
         width: 200px;
         height: 330px;
@@ -565,23 +541,77 @@ footer {
     .hours {
         width: 200px;
     }
+    
+    /* Contact Page */
+    .container-contact,
+    .container-contact-form {
+        max-width: 680px;
+    }
 
-   
+    .contact-form {
+        margin-right: 100px;
+    }
+
+    /* Footer */
+    .footer-nav-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        margin: auto;
+    }   
 }
 
 
-
 @media (min-width:300px) and (max-width:709px) {
+    
+    /* General Styling */
     main {
         width: 300px;
     }
 
+    a {
+        font-size: 1rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .headline {
+        height: 80px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .CTA-magenta,
+    .CTA-turquoise {
+        width: 200px;
+        height: 18px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .white {
+        text-align: center;
+        width: 230px;
+        margin-top: 20px;
+    }
+
+    /* Header */
     .logo {
         width: 100px;
     }
 
     .header-top {
         height: 100px;
+    }
+
+    .header-nav {
+        margin-right: 30px;
     }
 
     .button-dropdown {
@@ -599,21 +629,13 @@ footer {
         text-align: center;
     }
 
-    a {
-        font-size: 1rem;
-    }
-
-    .header-nav {
-        margin-right: 30px;
-    }
-
+    /* Shared Styling */
     .img-event,
     .img-exhibition,
     .img-get-involved,
     .img-museum,
     .img-explore-intro {
         width: 300px;
-
     }
 
     .textbox-event,
@@ -627,18 +649,23 @@ footer {
         padding-bottom: 10px;
     }
 
-    .explore-all {
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
     .textbox-intro,
     .textbox-explore-children,
     .textbox-explore-teachers-researchers {
         width: 280px;
         height: 160px;
         overflow: scroll;
+    }
+
+    .textbox-CTA {
+        max-width: 300px;
+    }
+
+    /* Index Page */
+    .explore-all {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
     }
 
     .container-explore-intro {
@@ -652,16 +679,14 @@ footer {
         row-gap: 20px;
     }
 
+    /* Exhibition Page */
     .exhibitions-events {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-
-    .textbox-CTA {
-        max-width: 300px;
-    }
-
+    
+    /* Get Involved Page */
     .container-get-involved {
         display: flex;
         flex-direction: column;
@@ -672,14 +697,44 @@ footer {
         flex-direction: column-reverse;
     }
     
-
+    /* Visitor Page */
     .visit-at-museum,
     .visitor-info {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
+
+    /* Contact Page */
+    .container-contact,
+    .container-contact-form {
+        max-width: 280px;
+        height: fit-content;
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: auto;
+        margin: 0;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 15px;
+    }
+
+    .contact-form {
+        margin-right: 0px;
+    }
+
+    .button-contact-form {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    /* Footer */
     .footer-nav {
         display: flex;
         flex-direction: column;
@@ -704,69 +759,13 @@ footer {
         height: 30px;
     }
 
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .white {
-        text-align: center;
-        width: 230px;
-        margin-top: 20px;
-    }
-
-    h1,
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .headline {
-        height: 80px;
-    }
-
-    .CTA-magenta,
-    .CTA-turquoise {
-        width: 200px;
-        height: 18px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .container-contact,
-    .container-contact-form {
-        max-width: 280px;
-        height: fit-content;
-    }
-
-    
-    .contact-form {
-        margin-right: 0px;
-    }
-
-    .contact-icon {
-        width: 30px;
-        height: auto;
-        margin: 0;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding-bottom: 15px;
-    }
-
-    .button-contact-form {
-        margin-bottom: 20px;
-        width: 200px;
-    }
-
     .footer-newsletter {
         display: flex;
         flex-direction: column;
         align-self: center;
+        text-align: center;
+        max-width: 280px;
+        margin-top: 20px;
     }
 
-   
-    
 }
