@@ -548,6 +548,10 @@ footer {
         max-width: 680px;
     }
 
+    .container-contact {
+        height: 230px;
+    }
+
     .contact-form {
         margin-right: 100px;
     }
